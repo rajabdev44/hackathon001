@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-icons span {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    background: url(WhatsApp\ Image\ 2025-11-21\ at\ 12.26.45_a229c499.jpg) center / cover;
+    height: 90kvh;
+    flex-direction: row-reverse;
+}
+
+.hero-content {
+    width: 45%;
+    background: #f7ecd9;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+.hero-content .tag {
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin: 15px 0;
+    color: #7c5e24;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #7c5e24;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* BROWSE RANGE */
+.browse-range {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.browse-range h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.browse-range p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.range-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.range-card {
+    width: 280px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.range-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.range-card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+    
+    
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+.product-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.card p {
+    margin: 0 15px 10px;
+    color: #555;
+    text-align: left;
+}
+
+.card strong {
+    margin: 0 15px;
+    display: block;
+    font-size: 18px;
+}
+
+strong.sale {
+    color: #e60000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Base Styles */
+:root {
+    --primary-color: #B88E2F; /* Explore More button color */
+    --text-dark: #333333;
+    --text-muted: #9F9F9F;
+    --bg-light: #FCF8F3; /* Background color for the inspiration section */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Replace with the actual font if known */
+}
+
+body {
+    color: var(--text-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1240px; /* Adjust max width as needed */
+    margin: 0 auto;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.muted {
+    color: var(--text-muted);
+}
+
+/* CTA Button */
+.cta {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.cta:hover {
+    background-color: #a07a21;
+}
+
+/* --- Inspiration Section --- */
+
+.insp {
+    background-color: var(--bg-light);
+    padding: 40px 0; /* Adjust padding to match image */
+}
+
+.insp-inner {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.insp-left {
+    flex: 1;
+    max-width: 400px;
+    padding-left: 20px; /* For alignment */
+}
+
+.insp-left h3 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.insp-left p {
+    margin-bottom: 25px;
+}
+
+.insp-right {
+    flex: 2;
+    min-height: 500px; /* Fixed height for visual structure */
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-slide {
+    flex-shrink: 0;
+    width: 60%; /* Main image takes up 60% of the space */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.slide-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 70%;
+    transform: translateX(-10%); /* Shifts the box to the left */
+}
+
+.slide-nav {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.slide-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.slide-arrow {
+    position: absolute;
+    top: 50%;
+    right: -30px; /* Positions the arrow outside the white box */
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 60%; /* Start dots after the main image area */
+    display: flex;
+    gap: 10px;
+    padding-left: 15px; /* Spacing from the main image */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--text-muted);
+    cursor: pointer;
+}
+.dot.active {
+    background-color: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-next-preview {
+    width: 40%; /* Preview image takes up 40% of the space */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    right: 0;
+}
+
+/* Next Slide Arrow (for the image's right arrow) */
+.insp-right::after {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    right: 0px; /* Adjust as needed */
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--text-dark);
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/* --- Hashtag/Mosaic Section --- */
+
+.hashtag {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hashtag-top {
+    margin-bottom: 5px;
+}
+
+.hashtag-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.mosaic {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for the layout */
+    grid-template-rows: repeat(2, 250px); /* 2 rows with a fixed height */
+}
+
+.mosaic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Grid Area definitions for the mosaic layout */
+.m1 { grid-area: 1 / 1 / 3 / 2; } /* Tall image on the far left */
+.m2 { grid-area: 1 / 2 / 2 / 4; } /* Wide image on the top middle */
+.m3 { grid-area: 2 / 2 / 3 / 3; } /* Small image bottom left of m2 */
+.m4 { grid-area: 2 / 3 / 3 / 4; } /* Small image bottom right of m2 */
+.m5 { grid-area: 1 / 4 / 3 / 5; } /* Tall image in the middle */
+.m6 { grid-area: 1 / 5 / 2 / 6; } /* Small image top left of m7 */
+.m7 { grid-area: 2 / 5 / 3 / 6; } /* Small image bottom left of m7 */
+.m8 { grid-area: 1 / 6 / 3 / 8; } /* Tall image on the far right */
+
+
+/* --- Footer --- */
+
+.site-footer {
+    border-top: 1px solid #D9D9D9;
+    padding-top: 50px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col strong {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    line-height: 1.5;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    color: var(--text-muted);
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.links-col ul, .help-col ul {
+    list-style: none;
+}
+
+.links-col li, .help-col li {
+    margin-bottom: 15px;
+}
+
+.links-col a, .help-col a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+.links-col a:hover, .help-col a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nl {
+    border: none;
+    border-bottom: 1px solid var(--text-dark);
+    padding: 5px 0;
+    flex-grow: 1;
+    background: transparent;
+}
+.nl::placeholder {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.subscribe {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--text-dark);
+    color: var(--text-dark);
+    font-weight: bold;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.subscribe:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid #D9D9D9;
+    padding: 20px 0;
+    color: var(--text-dark);
+    font-size: 14px;
+}
