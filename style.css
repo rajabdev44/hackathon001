@@ -19,10 +19,23 @@ body {
     background: #fff;
 }
 
+/* Logo Section */
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 24px;
     font-weight: 700;
 }
+
+.logo img {
+    height: 45px;
+    width: auto;
+}
+
+
+
+
 
 .nav-links a {
     margin: 0 15px;
@@ -686,3 +699,4 @@ body {
         text-align: center;
     }
 }   
+
